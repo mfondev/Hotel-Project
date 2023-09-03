@@ -43,7 +43,15 @@ body {
   box-sizing: border-box;
   /* overflow: hidden; */
 }
-
+a {
+  text-decoration: none;
+}
+:root {
+  --primary-color: #e49e48;
+  --bck-color: #f7f2ec;
+  --accent1-color: #faecdc;
+  --accent2-color: #305369;
+}
 .front-page {
   position: relative;
 }
@@ -74,7 +82,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: var(--bck-color);
 }
 
 .menu-area {
@@ -86,8 +94,27 @@ body {
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.content > h2 {
+  color: var(--bck-color);
+  font-size: 52px;
+  font-weight: 100;
+}
+
+.content > a {
+  color: var(--accent2-color);
+  background: var(--bck-color);
+  font-weight: 600;
+  /* font-size: 18px; */
+  padding: 15px 30px;
+}
+
+.content > a:hover {
+  background-color: var(--primary-color);
+  color: var(--bck-color);
 }
