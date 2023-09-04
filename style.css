@@ -103,23 +103,17 @@ a {
 .fa-location-dot {
   color: var(--primary-color);
 }
-.sth {
+.line {
   display: grid;
   place-items: center;
 }
+.home-line {
+  bottom: -1;
+}
 .center-line {
   position: absolute;
-  /* left: 0; */
-  right: 50;
-  bottom: -1;
   height: 140px;
-  /* transform: translateY(-50%); */
-  /* transform: translate(-50%, -50%); */
-
   border-left: 2px solid orange;
-  /* border-top: 2px solid orange; */
-  /* display: grid;
-  place-items: center; */
 }
 
 .pool-content {
@@ -264,21 +258,15 @@ a {
 }
 
 .center-line {
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%; */
   height: 140px;
   border-left: 2px solid #e49e48;
-  /* border-top: 2px solid orange; */
-  /* display: grid;
-  place-items: center; */
 }
 
 .room-suites-section {
   padding: 5%;
   text-align: center;
   background-color: var(--accent1-color);
+  position: relative;
 }
 
 .room-area > h2 {
@@ -299,35 +287,36 @@ a {
 }
 
 .room-img-container {
-  overflow: hidden;
-  /* height: 250px; */
   position: relative;
+  overflow: hidden;
 }
 .room-img-container img {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
-.room-img-container img:hover {
+.room-img-container:hover img {
   transform: scale(1.2);
 }
 
 .prices {
-  background-color: rgba(48, 83, 105, 0.5);
-  opacity: 1;
+  background-color: rgba(48, 83, 105, 0.8);
   position: absolute;
-  z-index: -1000;
-  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   text-align: center;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.room-img-container:hover .prices {
+  opacity: 1;
 }
 
 .prices > h3 {
@@ -338,4 +327,13 @@ a {
   color: #fff;
   font-size: 24px;
   margin: 0;
+}
+
+.room > h2 {
+  color: var(--accent2-color);
+}
+
+.line-one {
+  position: absolute;
+  top: 40;
 }
