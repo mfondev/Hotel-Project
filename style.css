@@ -393,10 +393,11 @@ a {
 }
 
 .preview-section {
-  padding: 10% 5%;
   background-color: var(--accent1-color);
 }
-
+.guests {
+  padding: 10% 5% 0% 5%;
+}
 .guests > h2 {
   color: var(--primary-color);
   text-align: center;
@@ -414,4 +415,39 @@ a {
   align-items: center;
   justify-content: space-between;
   overflow-y: scroll;
+  padding: 2%;
+  gap: 30px;
 }
+.sight-container {
+  overflow: hidden;
+}
+.sight-img {
+  position: relative;
+  /* overflow: hidden; */
+}
+.sight-img img {
+  width: 1000px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sight-img:hover {
+  transform: scale(1.2);
+}
+
+.org-reviews {
+  width: 400px;
+  background-color: #fff;
+  padding: 50px;
+  color: var(--accent2-color);
+  position: absolute;
+  /* top: 0; */
+  left: 10%;
+  bottom: -25%;
+}
+
+.org-reviews > p {
+  font-size: 20px;
+}
+/* ::-webkit-scrollbar {
+  overflow: hidden;
+} */
