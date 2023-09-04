@@ -391,3 +391,19 @@ a {
 .royal-value {
   margin: 0 8%;
 }
+
+.preview-section {
+  margin: 10% 5%;
+}
+
+.guests > h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.guests > h1 {
+  color: var(--accent2-color);
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 100px;
+}
