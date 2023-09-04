@@ -113,7 +113,7 @@ a {
 .center-line {
   position: absolute;
   height: 140px;
-  border-left: 2px solid orange;
+  border-left: 2px solid #e49e48;
 }
 
 .pool-content {
@@ -190,7 +190,7 @@ a {
 }
 
 .experience-section {
-  margin: 5%;
+  margin: 10% 5%;
 }
 .royal-experience {
   text-align: center;
@@ -257,13 +257,8 @@ a {
   border: none;
 }
 
-.center-line {
-  height: 140px;
-  border-left: 2px solid #e49e48;
-}
-
 .room-suites-section {
-  padding: 5%;
+  padding: 10% 5%;
   text-align: center;
   background-color: var(--accent1-color);
   position: relative;
@@ -335,5 +330,64 @@ a {
 
 .line-one {
   position: absolute;
-  top: 40;
+  height: 140px;
+  top: -5%;
+  border-left: 2px solid #e49e48;
+}
+.line-two {
+  position: absolute;
+  height: 140px;
+  bottom: -5%;
+  border-left: 2px solid #e49e48;
+}
+
+.culture-section {
+  margin: 10% 5%;
+}
+
+.royal-culture > h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.royal-culture > h1 {
+  color: var(--accent2-color);
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.culture-interest {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.activities {
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--accent2-color);
+  transition: 0.3s ease-in-out;
+}
+
+.activities i {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.activities:hover {
+  background-color: var(--accent2-color);
+  color: #fff;
+}
+.activities:hover i {
+  color: #fff;
+}
+
+.royal-value {
+  margin: 0 8%;
 }
