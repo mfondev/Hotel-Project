@@ -106,15 +106,37 @@ a {
   font-weight: 100;
 }
 
-.content > a {
+.get-started {
   color: var(--accent2-color);
   background: var(--bck-color);
   font-weight: 600;
-  /* font-size: 18px; */
-  padding: 15px 30px;
+  padding: 20px 30px;
+  transition: padding 0.3s ease-in-out;
 }
-
-.content > a:hover {
+.get-started:hover {
   background-color: var(--primary-color);
   color: var(--bck-color);
+  padding: 20px 35px;
+}
+
+.location {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 70%;
+  color: var(--bck-color);
+}
+
+.arrow {
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+.fa-location-dot {
+  color: var(--primary-color);
 }
