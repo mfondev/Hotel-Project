@@ -4,13 +4,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Quicksand';
+  background-color: var(--background-color);
 }
 a {
   text-decoration: none;
 }
 :root {
   --primary-color: #e49e48;
-  --bck-color: #f7f2ec;
+  --background-color: #f7f2ec;
   --accent1-color: #faecdc;
   --accent2-color: #305369;
 }
@@ -44,7 +45,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--bck-color);
+  color: #fff;
 }
 
 .menu-area {
@@ -63,21 +64,21 @@ a {
 }
 
 .content > h2 {
-  color: var(--bck-color);
+  color: #fff;
   font-size: 52px;
   font-weight: 100;
 }
 
 .get-started {
   color: var(--accent2-color);
-  background: var(--bck-color);
+  background: var(--background-color);
   font-weight: 600;
   padding: 20px 30px;
   transition: padding 0.3s ease-in-out;
 }
 .get-started:hover {
   background-color: var(--primary-color);
-  color: var(--bck-color);
+  color: var(--background-color);
   padding: 20px 35px;
 }
 
@@ -90,7 +91,7 @@ a {
   align-items: center;
   justify-content: space-between;
   top: 70%;
-  color: var(--bck-color);
+  color: #fff;
 }
 
 .arrow {
@@ -106,7 +107,7 @@ a {
 .vertical-line {
   position: absolute;
   bottom: 0;
-  border-left: 2px solid #000; /* Adjust the width and color as needed */
+  border-left: 2px solid #000;
   height: 400px;
   width: 1px;
   color: var(--primary-color);
@@ -115,11 +116,63 @@ a {
 }
 
 .pool-content {
-  margin: 10%;
+  margin: 8%;
 }
 
 .pool-content > h1 {
   color: var(--accent2-color);
   font-size: 42px;
   text-align: center;
+  margin-bottom: 100px;
+}
+
+.pool-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 100px; */
+}
+.pool-container {
+  overflow: hidden;
+  width: 500px;
+  height: 600px;
+  /* width: 50%; */
+}
+
+.pool-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.pool-img:hover {
+  transform: scale(1.1);
+}
+
+.heritage {
+  width: 45%;
+}
+
+.heritage > h2 {
+  color: var(--primary-color);
+}
+
+.heritage > h3 {
+  color: var(--accent2-color);
+  font-size: 35px;
+}
+
+.heritage > p {
+  color: var(--accent2-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.learn-more {
+  padding: 10px 20px;
+  color: var(--accent2-color);
 }
