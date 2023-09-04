@@ -408,3 +408,10 @@ a {
   text-align: center;
   margin-bottom: 100px;
 }
+
+.review-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
