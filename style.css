@@ -389,11 +389,12 @@ a {
 }
 
 .royal-value {
-  margin: 0 8%;
+  margin: 10% 8%;
 }
 
 .preview-section {
-  margin: 10% 5%;
+  padding: 10% 5%;
+  background-color: var(--accent1-color);
 }
 
 .guests > h2 {
