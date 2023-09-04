@@ -170,9 +170,31 @@ a {
   color: var(--accent2-color);
   font-size: 20px;
   font-weight: 600;
+  width: 90%;
+  padding-bottom: 20px;
 }
 
 .learn-more {
   padding: 10px 20px;
   color: var(--accent2-color);
+  border: 1px solid #305369;
+  background-color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.learn-more:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.experience-section {
+  margin: 8%;
+}
+.royal-experience {
+  text-align: center;
+}
+
+.royal-experience > h2 {
+  color: var(--primary-color);
 }
