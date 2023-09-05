@@ -394,6 +394,7 @@ a {
 
 .preview-section {
   background-color: var(--accent1-color);
+  position: relative;
 }
 .guests {
   padding: 10% 5% 0% 5%;
@@ -415,22 +416,29 @@ a {
   align-items: center;
   justify-content: space-between;
   overflow-y: scroll;
-  padding: 2%;
+  padding-left: 2%;
   gap: 30px;
+  width: 100%;
+  /* position: relative; */
+}
+
+.review-imgs::-webkit-scrollbar {
+  overflow: hidden;
 }
 .sight-container {
   overflow: hidden;
+  width: 1000px;
 }
 .sight-img {
   position: relative;
-  /* overflow: hidden; */
 }
 .sight-img img {
   width: 1000px;
+  height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.sight-img:hover {
+.sight-container:hover img {
   transform: scale(1.2);
 }
 
@@ -448,6 +456,28 @@ a {
 .org-reviews > p {
   font-size: 20px;
 }
-/* ::-webkit-scrollbar {
-  overflow: hidden;
-} */
+
+.tripadvisor {
+  display: flex;
+  align-items: center;
+}
+
+.tripadvisor img {
+  width: 30px;
+}
+
+.booking {
+  color: #022841;
+}
+.com {
+  color: #90c7e9;
+}
+
+.certified-img {
+  position: absolute;
+  top: 36%;
+  /* left: 0; */
+  right: 20%;
+  z-index: 100;
+  width: 120px;
+}
