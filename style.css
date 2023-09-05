@@ -616,7 +616,7 @@ footer {
 
 .menu-bar-page {
   background-color: var(--accent2-color);
-  padding: 2% 5%;
+  padding: 3% 5%;
 }
 .menu-bar-page .footer-line {
   margin: 50px 0;
@@ -683,7 +683,7 @@ footer {
 
 .menu-container {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
   width: 100%;
