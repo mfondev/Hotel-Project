@@ -451,6 +451,7 @@ a {
   /* top: 0; */
   left: 10%;
   bottom: -25%;
+  z-index: 1;
 }
 
 .org-reviews > p {
@@ -474,10 +475,36 @@ a {
 }
 
 .certified-img {
+  width: 120px;
   position: absolute;
-  top: 36%;
-  /* left: 0; */
+  top: 26%;
   right: 20%;
   z-index: 100;
-  width: 120px;
+}
+
+.social-media {
+  padding: 10% 5% 3% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-text {
+  width: 60%;
+}
+
+.social-text > h2 {
+  color: var(--primary-color);
+  /* text-align: center; */
+}
+
+.social-text > h1 {
+  color: var(--accent2-color);
+  font-size: 38px;
+  /* text-align: center; */
+  margin-bottom: 100px;
+}
+
+.ig-link {
+  align-self: center;
+  /* justify-self: end; */
 }
