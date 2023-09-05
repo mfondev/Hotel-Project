@@ -508,17 +508,54 @@ a {
   align-self: center;
   /* justify-self: end; */
 }
-.footer {
+footer {
   background-color: var(--accent2-color);
   color: #fff;
-  /* margin: 0; */
-  padding: 5%;
+  padding: 10% 5%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.org-info > h1 {
+  margin-bottom: 0;
 }
 .org-info img {
-  width: 500px;
+  width: 400px;
   height: 400px;
   object-fit: cover;
 }
 .footer i {
   color: var(--primary-color);
+  padding-right: 10px;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #90c7e9;
+  margin: 10px 0;
+}
+.item-line {
+  border-bottom: 1px solid #90c7e9;
+  /* margin: 0 10px; */
+}
+
+.hotel-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 20px;
+}
+
+.item > h2 {
+  text-align: left;
+}
+.items > li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: left;
+}
+.items {
+  padding: 0;
 }
