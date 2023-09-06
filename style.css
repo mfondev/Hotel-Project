@@ -127,6 +127,7 @@ a {
   justify-content: space-between;
   top: 70%;
   color: #fff;
+  font-size: 12px;
 }
 
 .arrow {
@@ -260,6 +261,7 @@ a {
   width: 100%;
   height: 240px;
   transition: transform 0.3s;
+  object-fit: cover;
 }
 
 .lounge-img-container img:hover {
@@ -470,7 +472,7 @@ a {
 }
 .sight-img img {
   width: 1000px;
-  height: 100%;
+  /* height: 100%; */
   transition: all 0.5s ease-in-out;
   /* position: relative; */
 }
@@ -683,7 +685,6 @@ footer {
 
 .menu-container {
   position: absolute;
-  /* top: 0; */
   left: 0;
   right: 0;
   width: 100%;
@@ -696,4 +697,123 @@ footer {
 .show-menu-container {
   visibility: visible;
   transform: translateX(0%);
+}
+
+@media screen and (max-width: 768px) {
+  .reserve-now {
+    padding: 10px;
+  }
+  .content > h2 {
+    font-size: 32px;
+  }
+  .get-started {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .center-line {
+    height: 100px;
+  }
+  .pool-content h1 {
+    font-size: 32px;
+  }
+  .pool-area {
+    flex-direction: column;
+  }
+  .heritage {
+    width: 100%;
+  }
+  .heritage h2 {
+    text-align: center;
+  }
+  .royal-experience h1 {
+    font-size: 24px;
+  }
+  .lounge-img-container {
+    height: 150px;
+  }
+  .lounge-img-container img {
+    height: 150px;
+  }
+  .lounge-container h1 {
+    font-size: 18px;
+  }
+  .lounge-container p {
+    font-size: 12px;
+  }
+  .lounge-container .view-more {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .room-area h1 {
+    font-size: 32px;
+  }
+  .room > h2 {
+    font-size: 18px;
+  }
+  .rooms-images {
+    gap: 10px;
+  }
+  .royal-culture h1 {
+    font-size: 32px;
+  }
+  .culture-interest {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .activities {
+    width: 290px;
+    height: 250px;
+  }
+  .pool-img {
+    height: 500px;
+    /* padding-top: 20px; */
+  }
+
+  .heritage {
+    margin-bottom: 50px;
+  }
+  .line-one {
+    top: -4%;
+  }
+  .line-one,
+  .line-two {
+    height: 100px;
+  }
+  .guests h1 {
+    font-size: 32px;
+  }
+  .sight-container {
+    width: 700px;
+  }
+  .sight-container img {
+    width: 700px;
+  }
+  .org-reviews {
+    padding: 20px;
+  }
+  .certified-img {
+    right: 5%;
+  }
+  .social-text h1 {
+    font-size: 28px;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .item h2 {
+    font-size: 16px;
+  }
+  .items > li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .menu-content p {
+    font-size: 32px;
+  }
+  .menu-item {
+    gap: 20px;
+  }
+  .menu-item li {
+    font-size: 16px;
+  }
 }
