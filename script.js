@@ -30,7 +30,7 @@ closeBar.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-  console.log(window.pageYOffset)
+  // console.log(window.pageYOffset)
   let menuHas = menuContainer.classList.contains('show-menu-container')
 
   let pageHeight = window.pageYOffset

@@ -167,13 +167,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 100px; */
 }
 .pool-container {
   overflow: hidden;
   width: 500px;
   height: 600px;
-  /* width: 50%; */
 }
 
 .pool-img {
@@ -815,5 +813,101 @@ footer {
   }
   .menu-item li {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .navbar {
+    font-size: 12px;
+  }
+  .menu-bar {
+    width: 20px;
+  }
+  .reserve-now {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .reserve-now:hover {
+    color: var(--accent2-color);
+    padding: 12px;
+    background-color: var(--background-color);
+  }
+  .reserve-now:hover .fa-phone {
+    padding-right: 10px;
+  }
+
+  .content > h2 {
+    font-size: 14px;
+  }
+  .get-started {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .location {
+    font-size: 8px;
+    font-weight: 100;
+  }
+  .arrow {
+    padding: 10px;
+  }
+  .pool-content > h1 {
+    padding-top: 20px;
+    font-size: 24px;
+  }
+  .pool-container {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+  }
+  .pool-img {
+    width: 300px;
+    height: 300px;
+  }
+  .heritage h3 {
+    font-size: 24px;
+  }
+  .learn-more {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .royal-experience h1 {
+    font-size: 2px;
+  }
+  .excursions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .lounge-img-container {
+    height: 200px;
+  }
+  .lounge-img-container img {
+    height: 200px;
+  }
+  .lounge-container h1 {
+    font-size: 24px;
+  }
+  .lounge-container p {
+    font-size: 16px;
+  }
+  .room-area h1 {
+    font-size: 24px;
+  }
+  .rooms-images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rooms h2 {
+    font-size: 12px;
+  }
+  .royal-culture h1 {
+    font-size: 24px;
+  }
+  .culture-interest {
+    grid-template-columns: 1fr;
+  }
+  .guests h1 {
+    font-size: 24px;
+  }
+  .guests h2 {
+    font-size: 20px;
   }
 }
