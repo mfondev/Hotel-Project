@@ -781,15 +781,20 @@ footer {
   }
   .sight-container {
     width: 700px;
+    /* height: 800px; */
   }
   .sight-container img {
     width: 700px;
   }
   .org-reviews {
+    bottom: 20%;
     padding: 20px;
   }
   .certified-img {
     right: 5%;
+  }
+  .social-media {
+    padding: 0% 5% 3% 10%;
   }
   .social-text h1 {
     font-size: 28px;
@@ -913,20 +918,32 @@ footer {
   .guests h2 {
     font-size: 20px;
   }
+  .sight-img {
+    height: 500px;
+  }
   .sight-container {
     width: 500px;
   }
   .sight-container img {
     width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .org-reviews p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
   }
   .org-reviews {
-    padding: 10px;
-    width: 300px;
-    height: 200px;
+    /* font-size: 8px; */
+    left: 5%;
+    bottom: 15%;
+    padding: 20px;
+    width: 350px;
+    height: 250px;
   }
   .certified-img {
-    top: 34%;
-    right: 5%;
+    top: 30%;
+    right: 2%;
     width: 50px;
   }
   .social-media {
@@ -951,5 +968,26 @@ footer {
   }
   .copyrights {
     flex-direction: column;
+  }
+  .menu-container {
+    overflow: scroll;
+  }
+  .menu-navbar .menu-area h1 {
+    display: none;
+  }
+  .menu-container .footer-line {
+    margin: 10px 0;
+  }
+  .menu-content p {
+    font-size: 24px;
+  }
+  .menu-content {
+    line-height: 50px;
+  }
+  .menu-item {
+    flex-direction: column;
+  }
+  .line {
+    display: none;
   }
 }
